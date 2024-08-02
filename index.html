@@ -3,69 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazıl'ın Mobil Uygulama Sayfası</title>
+    <title>Fazıl Bütev Official Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f2f5;
             color: #333;
+        }
+        header {
+            background-color: #282c34;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         .container {
             max-width: 1200px;
             margin: auto;
             padding: 20px;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+        .section {
+            margin-bottom: 40px;
         }
-        h1 {
-            margin: 0;
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #282c34;
         }
-        .content {
+        .app-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .app-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .bio {
+            background-color: #ffffff;
             padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #4CAF50;
+            padding: 20px;
+            background-color: #282c34;
             color: white;
         }
-        .button {
+        a.button {
             display: inline-block;
             padding: 10px 20px;
-            margin: 10px 0;
-            color: white;
+            color: #ffffff;
             background-color: #4CAF50;
             text-decoration: none;
             border-radius: 5px;
             text-align: center;
+            margin-top: 10px;
         }
-        .button:hover {
+        a.button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Fazıl'ın Mobil Uygulama Sayfası</h1>
+        <h1>Fazıl Bütev Official Website</h1>
     </header>
     <div class="container">
-        <div class="content">
-            <h2>Hoşgeldiniz!</h2>
-            <p>Bu, Fazıl'ın mobil uygulama portföyüne ait örnek bir sayfadır.</p>
-            <a href="#" class="button">Uygulama Detayları</a>
-        </div>
+        <section class="section app-gallery">
+            <h2>Geliştirdiğim Uygulamalar</h2>
+            <div>
+                <img src="app1.jpg" alt="Uygulama 1">
+                <a href="https://example.com/app1" class="button">Uygulama 1 Detayları</a>
+            </div>
+            <div>
+                <img src="app2.jpg" alt="Uygulama 2">
+                <a href="https://example.com/app2" class="button">Uygulama 2 Detayları</a>
+            </div>
+            <div>
+                <img src="app3.jpg" alt="Uygulama 3">
+                <a href="https://example.com/app3" class="button">Uygulama 3 Detayları</a>
+            </div>
+        </section>
+        <section class="section bio">
+            <h2>Özgeçmişim</h2>
+            <p>
+                I am an iOS and Android application developer living in Ankara and an engineer who constantly improves himself in software development.
+            </p>
+            <p>
+                When I made a career change, I was first doing manual and automated software tests of the MHRS project, and now I am writing the iOS and Android applications of this project.
+            </p>
+        </section>
     </div>
     <footer>
-        <p>&copy; 2024 Fazıl. Tüm hakları saklıdır.</p>
+        <p>&copy; 2024 Fazıl Bütev. Tüm hakları saklıdır.</p>
     </footer>
 </body>
 </html>
