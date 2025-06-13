@@ -1,157 +1,212 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazıl Bütev Official Website</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-        header {
-            background-color: #282c34;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #282c34;
-        }
-        .app-gallery ul {
-            list-style: none;
-            padding: 0;
-        }
-        .app-gallery li {
-            background-color: #ffffff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .app-gallery img {
-            max-width: 100px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        .app-details {
-            margin-left: 20px;
-        }
-        .app-details h3 {
-            margin: 0;
-            font-size: 1.5em;
-            color: #282c34;
-        }
-        .app-details p {
-            margin: 10px 0;
-            font-size: 1em;
-        }
-        .bio {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #282c34;
-            color: white;
-        }
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #ffffff;
-            background-color: #4CAF50;
-            text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
-        }
-        a.button:hover {
-            background-color: #45a049;
-        }
-        .social-links {
-        margin-top: 20px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fazıl Bütev Official Website</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
     }
+
+    header {
+      background-color: #282c34;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #282c34;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .app-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .app-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .app-card img {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+    }
+
+    .app-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.4em;
+    }
+
+    .app-card p {
+      font-size: 0.95em;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .button-group {
+      margin-top: 10px;
+    }
+
+    .button-group a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 8px 14px;
+      font-size: 0.9em;
+      color: #fff;
+      background-color: #4CAF50;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .button-group a:hover {
+      background-color: #3e8e41;
+    }
+
+    .bio {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
     .social-links a {
-        margin-right: 20px;
-        display: inline-block;
+      margin-right: 20px;
+      display: inline-block;
     }
+
     .social-links img {
-        border-radius: 50%;
-        transition: transform 0.3s;
+      border-radius: 50%;
+      transition: transform 0.3s;
     }
+
     .social-links img:hover {
-        transform: scale(1.1);
+      transform: scale(1.1);
     }
-    </style>
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #282c34;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Fazıl Bütev Official Website</h1>
-    </header>
-    <div class="container">
-        <section class="section app-gallery">
-            <h2>Uygulamalarım</h2>
-            <ul>
-                <li>
-                    <div style="display: flex; align-items: center;">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/56/99/3a/56993ab7-e079-3b22-e990-69eb2d671114/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/230x0w.webp" alt="Borç, Bütçe Takip - BudgetKit">
-                        <div class="app-details">
-                            <h3>Borç, Bütçe Takip - BudgetKit</h3>
-                            <p>BudgetKit - Borçlarınızı Kolayca Yönetin ve Hatırlatıcı Bildirimler Alın</p>
-                            <p>BudgetKit uygulaması, borçlarınızı kolayca kaydedebileceğiniz, yönetebileceğiniz ve hatırlatıcı bildirimler alabileceğiniz bir uygulamadır. 
-                            Artık borçlarınızı unutmadan, zamanında ödeyerek finansal durumunuzu daha iyi kontrol edebilirsiniz.</p>
-                            <p>İşte Borç Takipçi'nin sunduğu özellikler:
-                                Kolay Borç Girişi: Basit ve kullanıcı dostu arayüz sayesinde borçlarınızı hızlıca ekleyin.
-                                Kategori Bazlı Yönetim: Borçlarınızı çeşitli kategorilere ayırarak daha düzenli bir şekilde takip edin.
-                                Hatırlatıcı Bildirimler: Ödeme tarihleri yaklaştığında otomatik hatırlatıcı bildirimler alın.
-                                Görsel ve Detaylı Listeleme: Borçlarınızı kategori bazında ve detaylı bir şekilde görüntüleyin.
-                                İstatistikler ve Analizler: Borçlarınızı analiz edin ve geçmiş ödemelerinizi kolayca inceleyin.
-                                Kullanıcı Dostu Tasarım: Şık ve modern tasarımıyla kullanıcı deneyimini en üst seviyede tutun.</p>
-                            <p>BudgetKit ile Finansal Kontrol Elinizde!</p>
-                            <p>Borçlarınızı zamanında ödeyerek mali durumunuzu daha iyi yönetebilir ve stresten uzak kalabilirsiniz. Hemen indirin ve borçlarınızı kontrol altına alın!</p>
-                            <a href="https://apps.apple.com/us/app/bor%C3%A7-b%C3%BCt%C3%A7e-takip-deb-tracking/id6550914718" class="button">Uygulama Detayları</a>
-                        </div>
-                    </div>
-                </li>
-                <!-- Diğer uygulamalar burada listelenebilir -->
-            </ul>
-        </section>
-        <section class="section bio">
-            <h2>Bana ulaşın</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/fazil-butev/" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40" height="40">
-                </a>
-                <a href="https://x.com/butev_f" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X" width="40" height="40">
-                </a>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Fazıl BÜTEV. Tüm hakları saklıdır.</p>
-    </footer>
+  <header>
+    <h1>Fazıl Bütev Official Website</h1>
+  </header>
+
+  <div class="container">
+    <section class="section app-gallery">
+      <h2>Uygulamalarım - My Apps</h2>
+      <div class="app-grid">
+
+        <!-- BudgetKit -->
+        <div class="app-card">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/5d/17/ee5d17b9-8165-1b5e-c005-4da0ef1ba956/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp" alt="BudgetKit">
+          <h3>BudgetKit</h3>
+          <p>Borç takibi, bildirimli ödeme hatırlatıcıları ve kategori bazlı finansal planlama özellikleriyle güçlü bir araç.</p>
+          <div class="button-group">
+            <a href="https://apps.apple.com/tr/app/budgetkit-money-budget-planner/id6550914718" target="_blank">App Store</a>
+          </div>
+        </div>
+
+        <!-- Rocket -->
+        <div class="app-card">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/87/fc/e087fcbb-016e-063d-ad14-2b43009321c6/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/217x0w.webp" alt="Rocket">
+          <h3>Rocket - Abonelik Takip</h3>
+          <p>Netflix, Spotify, iCloud ve daha fazlasını tek panelde takip edin. Abonelik yenilemelerini kaçırmayın.</p>
+          <div class="button-group">
+            <a href="https://apps.apple.com/tr/app/rocket-subscription-tracker/id6742135443" target="_blank">App Store</a>
+          </div>
+        </div>
+
+        <!-- Pinarify -->
+        <div class="app-card">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/69/c1/8669c165-3613-e881-7ab7-ad38560a5cba/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/217x0w.webp" alt="Pinarify">
+          <h3>Pinarify AI</h3>
+          <p>Sesli notlarınızı AI ile otomatik olarak yazıya dökün, özetleyin ve kolayca organize edin.</p>
+          <div class="button-group">
+            <a href="https://apps.apple.com/tr/app/pinarify-ai-ai-note-taker/id6738845956" target="_blank">App Store</a>
+          </div>
+        </div>
+
+        <!-- Tudulist -->
+        <div class="app-card">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/95/f0/cc/95f0cc56-05d7-adb7-9b95-f38c55a4ca74/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp" alt="Tudulist">
+          <h3>Tudulist</h3>
+          <p>Minimalist yapılacaklar listesi uygulaması. Sadeliği sevenler için hızlı ve temiz görev yönetimi.</p>
+          <div class="button-group">
+            <a href="https://apps.apple.com/tr/app/tudulist-minimalist-todo-app/id6741511471" target="_blank">App Store</a>
+          </div>
+        </div>
+
+        <!-- Trivia -->
+        <div class="app-card">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/19/9c/0b/199c0b9d-95c3-dde4-8897-4c9538c89f69/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/246x0w.webp" alt="Trivia QA">
+          <h3>Trivia: Questions & Answers</h3>
+          <p>Genel kültür testleri, bilgi yarışmaları ve hızlı beyin egzersizleri için harika bir seçenek.</p>
+          <div class="button-group">
+            <a href="https://apps.apple.com/tr/app/trivia-question-and-answers/id6683283025" target="_blank">App Store</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section bio">
+      <h2>Bana Ulaşın</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/fazil-butev/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40" height="40">
+        </a>
+        <a href="https://x.com/butev_f" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X" width="40" height="40">
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Fazıl BÜTEV. Tüm hakları saklıdır.</p>
+  </footer>
 </body>
 </html>
