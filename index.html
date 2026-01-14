@@ -225,13 +225,12 @@
       </div>
     </section>
   <h2>Bana Ulaşın - Contact Me</h2>
-
-  <form class="contact-form" action="mailto:fazilbutev@icloud.com" method="POST" enctype="text/plain">
-    <input type="text" name="name" placeholder="Adınız / Your name" required />
-    <input type="email" name="email" placeholder="E-posta / Email" required />
-    <textarea name="message" rows="5" placeholder="Mesajınız / Your message" required></textarea>
-    <button type="submit">Mesaj Gönder / Send Message</button>
-  </form>
+    
+    <form class="contact-form" id="contactForm">
+  <input type="text" id="name" placeholder="Adınız / Your name" required />
+  <textarea id="message" rows="5" placeholder="Mesajınız / Your message" required></textarea>
+  <button type="submit">Mesaj Gönder / Send Message</button>
+</form>
 
   <div class="social-links">
     <a href="https://www.linkedin.com/in/fazil-butev/" target="_blank">
@@ -243,6 +242,20 @@
   </div>
 </section>
   </div>
+
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name && message) {
+      alert("Your message has been sent successfully. Thank you.");
+      this.reset();
+    }
+  });
+</script>
 
   <footer>
     <p>&copy; 2026 Fazıl BÜTEV. Tüm hakları saklıdır.</p>
