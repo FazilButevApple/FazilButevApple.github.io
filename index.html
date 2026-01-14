@@ -127,6 +127,39 @@
       background-color: #282c34;
       color: white;
     }
+
+    .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #3e8e41;
+}
+
   </style>
 </head>
 <body>
@@ -191,22 +224,28 @@
 
       </div>
     </section>
+  <h2>Bana Ulaşın - Contact Me</h2>
 
-    <section class="section bio">
-      <h2>Bana Ulaşın</h2>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/fazil-butev/" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40" height="40">
-        </a>
-        <a href="https://x.com/butev_f" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X" width="40" height="40">
-        </a>
-      </div>
-    </section>
+  <form class="contact-form" action="mailto:fazilbutev@icloud.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Adınız / Your name" required />
+    <input type="email" name="email" placeholder="E-posta / Email" required />
+    <textarea name="message" rows="5" placeholder="Mesajınız / Your message" required></textarea>
+    <button type="submit">Mesaj Gönder / Send Message</button>
+  </form>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/fazil-butev/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40">
+    </a>
+    <a href="https://x.com/butev_f" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="40">
+    </a>
+  </div>
+</section>
   </div>
 
   <footer>
-    <p>&copy; 2025 Fazıl BÜTEV. Tüm hakları saklıdır.</p>
+    <p>&copy; 2026 Fazıl BÜTEV. Tüm hakları saklıdır.</p>
   </footer>
 </body>
 </html>
